@@ -16,10 +16,11 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			// creates the scene graph from the fxml file
-			Pane root = FXMLLoader.load(getClass().getResource("/ex1/ex1.fxml"));
+			Pane root = FXMLLoader.load(getClass().getResource("/ex3/application/ex3.fxml"));
 			
-			// creates the scene from the graph (fits its content), and adds it to the stage
+			// creates the scene from the graph (fits its content), add a title and adds it to the stage
 			Scene scene = new Scene(root);
+                        primaryStage.setTitle("Pie chart of the number of students in each major");
 			primaryStage.setScene(scene);
 			
 			// shows the stage
